@@ -16,10 +16,34 @@
             background-color: #414141;
             color: white;
         }
+        nav{
+            table-layout: fixed;
+            background-color: white;
+            padding: 20px;
+        }
+        li{
+            display: inline-block;
+            width: 20%;
+        }
+        .tt{
+            color: black;
+            font-style: normal;
+            text-decoration-line: none;
+        }
     </style>
 </head>
 <body>
-    <header class="b" style="background-color: pink;"><div style="text-align: center;"><h1>TONY STORE</h1></div></header>
+    <header class="b" style="background-color: pink;"><div style="text-align: center;"><a href="index.html">
+        <h1 class="tt">TONY STORE</h1>
+    </a></div>
+    <nav>
+        <ul>
+            <li>COMPANY</li>
+            <li>GROCERY</li>
+            <li>TOOL</li>
+            <li>CONTACT</li>
+        </ul>
+    </nav></header>
     <main class="b" style="background-color: yellowgreen;"><table align="center">
         <tr>
             <td><a href="egg.html"><img src="egg.jpg" alt="egg"></a></td>
@@ -31,9 +55,10 @@
         </tr>
     </table></main>
     <footer class="b" id="f" style="text-align: center;">
-        서울시 강남구 역삼동 119 대호B 8F
-        <br>대표: Tony
-        <br>전화: 010-2222-3333
+        서울시 강남구 역삼동 119 대호B 8F /
+        대표: Tony
+        <br>전화: 010-2222-3333 /
+        사업자번호: 333-22-55555
     </footer>
 </body>
 </html>
