@@ -39,6 +39,26 @@
             color: #000;
             text-decoration: none;
         }
+        .hstr{
+            text-align: center;
+        }
+        table{
+            border: 1px solid #000;
+            margin: 0 auto;
+            width: 500px;
+            border-collapse: collapse;
+        }
+        td{
+            border: 1px solid #000;
+        }
+        .hello{
+            height: 800px;
+            width: 100%;
+            background-color: red;
+        }
+        .hstr{
+            height: 800px;
+        }
     </style>
 </head>
 <body>
@@ -53,16 +73,33 @@
             <li class="cont"><a href="contact.html">CONTACT</a></li>
         </ul>
     </nav>
-    <main class="b" style="background-color: yellowgreen;"><table align="center">
-        <tr>
-            <td><a href="egg.html"><img src="egg.jpg" alt="egg"></a></td>
-            <td><a href="meat.html"><img src="meat.jpg" alt="meat"></a></td>
-            <td><a href="sauce.html"><img src="sauce.jpg" alt="sauce"></a></td>
-        </tr>
-        <tr>
-            <td><a href="vegetable.html"><img src="vegetable.jpg" alt="vegetable"></a></td>
-        </tr>
-    </table></main>
+    <main class="b" style="background-color: yellowgreen;">
+        <article class="hello">
+            <div class="hltxt"></div>
+            <div class="simg"></div>
+        </article>
+        <article class="hstr">
+            <h2>COMPANY HISTORY</h2>
+            <table>
+                <tr>
+                    <td>2022.08</td>
+                    <td>founded company</td>
+                </tr>
+                <tr>
+                    <td>2023.02</td>
+                    <td>opened the shopping mall</td>
+                </tr>
+                <tr>
+                    <td>2023.05</td>
+                    <td>accomplished 100,000 users</td>
+                </tr>
+                <tr>
+                    <td>2023.06</td>
+                    <td>series A funding</td>
+                </tr>
+            </table>
+        </article>
+    </main>
     <footer class="b" id="f" style="text-align: center;">
         서울시 강남구 역삼동 119 대호B 8F /
         대표: Tony
