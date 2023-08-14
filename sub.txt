@@ -1,0 +1,4 @@
+grocery page and tool page-sub page (list) -> refer to selecto
+sns icon add
+title TONY STORE color change
+top button in top right of footer
