@@ -29,6 +29,13 @@
             width: 24%;
             text-align: center;
         }
+        .shopping{position: relative;}
+        .submenu{position: absolute;width: 50%;left: 50%;transform: translateX(-50%);padding: 0;border: 0;text-align: center;display: block;height: 0;background-color: hotpink;margin: 0 auto;overflow: hidden;opacity: 0.3;}
+        .shopping:hover .submenu{height: 100px;}
+        ol{padding: 0;display: block;list-style: none;text-align: center;margin: 0 auto;}
+        .submenu li{display: block;text-align: center;margin: 0 auto;}
+        .submenu a{width: 100%;height: 100%;display: block;margin: 0 auto;line-height: 3;}
+        .submenu a:hover{opacity: 1;}
         .tt{
             color: black;
             text-decoration: none;
@@ -42,6 +49,7 @@
             margin-block-end: 0;
             margin-block-start: 0;
             background-color: pink;
+            padding: 0;
         }
         #f img{width: 20px;}
         @media screen and (max-width:500px) {
@@ -59,9 +67,17 @@
     <nav>
         <ul>
             <li class="com"><a href="company.html">COMPANY</a></li>
-            <li class="gro"><a href="grocery.html">GROCERY</a></li>
-            <li class="tool"><a href="tool.html">TOOL</a></li>
+            <li class="shopping">
+                <a href="grocery.html">SHOPPING</a>
+                <div class="submenu">
+                    <ol>
+                        <li><a href="grocery.html">GROCERY</a></li>
+                        <li><a href="tool.html">TOOL</a></li>
+                    </ol>
+                </div>
+            </li>
             <li class="cont"><a href="contact.html">CONTACT</a></li>
+            <li class="cont"><a href="notice.html">NOTICE</a></li>
         </ul>
     </nav>
     <main class="b" style="background-color: yellowgreen;"><table align="center">
