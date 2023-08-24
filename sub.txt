@@ -1,3 +1,2 @@
 grocery page and tool page-sub page (list) -> refer to selecto
-top button in top right of footer
 grocery page and tool page-list on top of main
