@@ -51,9 +51,11 @@
             color: #000;
             text-decoration: none;
         }
-        table{margin: 0 auto;}
-        table tr:first-of-type,table tr:nth-of-type(2),table tr:nth-of-type(3){text-align: left;}
-        .submit{cursor: pointer;width: 233px;height: 60px;font-size: 40px;background-image: linear-gradient(to right bottom,deepskyblue,dodgerblue);border: none;}
+        table{margin: 0 auto;border-collapse: collapse;}
+        table th:first-child,td:first-child{text-align: center;}
+        table th:nth-child(2),td:nth-child(2){width: 300px;text-align: center;border-left: 1px solid #000;border-right: 1px solid black;}
+        table th:last-child,td:last-child{width: 200px;text-align: center;}
+        table thead th{border-top: 1px solid #000;border-bottom: 1px solid black;}
         .btbx{width: 100%;position: relative;height: 30px;}
         .btn{width: 100px;position: absolute;top: 50%;transform: translateY(-50%);right: 10px;cursor: pointer;height: 33px;background-color: goldenrod;border-radius: 30px;}
         @media screen and (max-width:500px) {
@@ -110,7 +112,6 @@
                 </tr>
             </tbody>
         </table>
-        <br><button type="submit" class="submit">send to us</button>
         <div class="btbx"><a href="#"><button class="btn">top</button></a></div>
     </main>
     <footer class="b" id="f" style="text-align: center;">
