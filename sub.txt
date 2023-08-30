@@ -1,3 +1,4 @@
 grocery page and tool page-sub page (list) -> refer to selecto
+    table>>items>>list button to (grocery page or tool page)
 grocery page and tool page-list on top of main
-    div(opacity)->picture
+    div(opacity)->picture(without line)=upside on table
