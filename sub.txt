@@ -1,2 +1,3 @@
 grocery page and tool page-sub page (list) -> refer to selecto
 grocery page and tool page-list on top of main
+    div(opacity)->picture
