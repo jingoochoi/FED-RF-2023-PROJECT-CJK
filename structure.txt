@@ -1,5 +1,6 @@
 index(egg,meat,bowl,knife)
     company(hello text,history){scroll->screen change script}
-    grocery(egg,meat,sauce,vevetable){img click->move to each page}
-    tool(bowl,knife,plate,spoonset){img click->move to each page}
+    shopping
+        grocery(egg,meat,sauce,vevetable){img click->move to each page}
+        tool(bowl,knife,plate,spoonset){img click->move to each page}
     contact(map,mailform){map(inside iframe or bq),mailform(input text)}
