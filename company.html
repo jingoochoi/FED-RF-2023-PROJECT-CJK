@@ -72,8 +72,10 @@
         .hstr{
             height: 50%;
             width: 100%;
+            opacity: 0;
+            transition: opacity 3s;
         }
-        
+        .on{opacity: 1;}
         .hstrimg{float: left;}
         .hstrtable{top: calc(50%);padding-top: 15%;width: calc(96% - 700px);padding-left: 50px;float: left;}
         h2{position: relative;top: 40%;text-align: center;}
@@ -180,8 +182,10 @@
         function wft(e) {
             // console.log(e.wheelDelta)
             let dt=e.wheelDelta
-            if(dt<0)window.scrollTo(0,window.innerHeight)
-            else window.scrollTo(0,-window.innerHeight)
+            let hstr=document.querySelector('.hstr')
+            let on=document.querySelector('.on')
+            if(dt<0){window.scrollTo(0,window.innerHeight);hstr.classList.add('on')}
+            else {window.scrollTo(0,-window.innerHeight);hstr.classList.remove('on')}
         }
     </script>
 </body>
