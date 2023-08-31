@@ -103,7 +103,7 @@
             .hltxt{float: left;width: 100%;padding: 0;text-align: center;margin-top: 10%;margin-bottom: 10%;}
             .hltxt h2{margin: 0;font-size: 8vw;line-height: 1.3;padding-left: 3.3%;}
             .hltxt p{font-size: 3.3vw;}
-            .hstr{opacity: 1;}
+            /* .hstr{opacity: 1;} */
             .hstrtable{text-align: center;width: 100%;padding: 0;margin-bottom: 10%;}
             .hstrtable table{width: 100%;margin: 0 auto;}
             .hstrimg{width: 100%;}
@@ -178,13 +178,12 @@
         사업자번호: 333-22-55555
         <br><img src="./img/insta.png" alt="insta" height="20px">   <img src="./img/facebook.png" alt="facebook" height="20px">   <img src="./img/youtube.png" alt="youtube" height="20px">
     </footer>
-    <script>
+    <script defer>
         window.addEventListener('wheel',wft)
         function wft(e) {
             // console.log(e.wheelDelta)
             let dt=e.wheelDelta
             let hstr=document.querySelector('.hstr')
-            let on=document.querySelector('.on')
             if(dt<0){window.scrollTo(0,window.innerHeight);hstr.classList.add('on')}
             else {window.scrollTo(0,-window.innerHeight);/*hstr.classList.remove('on')*/}
         }
