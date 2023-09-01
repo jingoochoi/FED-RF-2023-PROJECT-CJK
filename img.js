@@ -72,3 +72,12 @@ const html={
                 </tr>
             </table>`,
 }
+window.addEventListener('DOMContentLoaded',imgft)
+function imgft() {
+    let imgo=document.querySelectorAll('.imk')//bug1
+    let tbl=document.querySelector('table')
+    console.log(tbl)
+    imgo.onclick=function(){
+        console.log('b')//bug1
+    }
+}
