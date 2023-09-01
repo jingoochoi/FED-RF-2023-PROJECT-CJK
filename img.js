@@ -75,9 +75,18 @@ const html={
 window.addEventListener('DOMContentLoaded',imgft)
 function imgft() {
     let imgo=document.querySelectorAll('.imk')//bug1
-    let tbl=document.querySelector('table')
+    let tbl=document.querySelector('.tblBox')
     console.log(tbl)
-    imgo.onclick=function(){
-        console.log('b')//bug1
-    }
+
+    imgo.forEach(ele=>{
+        ele.onclick=function(e){
+            console.log('b',e.target.alt)//bug1
+
+            let txt = e.target.alt;
+            tbl.innerHTML = html[txt];
+            
+        }
+
+    })
+    
 }

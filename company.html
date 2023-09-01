@@ -69,6 +69,7 @@
         .hello{
             height: 50%;
             width: 100%;
+            overflow: hidden;
         }
         .hstr{
             height: 50%;
@@ -109,6 +110,9 @@
             .hstrimg{width: 100%;}
             .hstrimg img{width: 100%;}
             footer{font-size: 3.9vw;}
+
+
+            .follower{display: none;position: absolute;z-index: 9999;}
         }
     </style>
 </head>
@@ -178,6 +182,11 @@
         사업자번호: 333-22-55555
         <br><img src="./img/insta.png" alt="insta" height="20px">   <img src="./img/facebook.png" alt="facebook" height="20px">   <img src="./img/youtube.png" alt="youtube" height="20px">
     </footer>
+
+    <div class="follower">
+        스크롤 해주세요~!
+
+    </div>
     <script>
         window.addEventListener('wheel',wft)
         function wft(e) {
@@ -195,6 +204,26 @@
         //         article.style.cursor='none'
         //     }
         // }
+
+
+        const hello = document.querySelector('.hello');
+        const follower = document.querySelector('.follower');
+
+        hello.onmouseover = e=>{
+            follower.style.display = 'block';
+            follower.style.position = 'absolute';
+            follower.style.transition = '.4s ease-out';
+        };
+        hello.onmouseout = e=>{
+            follower.style.display = 'none';
+        };
+        hello.onmousemove = e=>{
+            follower.style.top = e.pageY+'px';
+            follower.style.left = e.pageX+'px';
+        };
+
+ 
+
     </script>
 </body>
 </html>
