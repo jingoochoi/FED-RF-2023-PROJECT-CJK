@@ -1,0 +1,11 @@
+@charset "utf-8";
+.tblBox{position: relative;height: 618px;}
+.tblBox table{text-align: center;}
+.bn{
+    width: 200px;
+    height: 40px;
+    background-color: gold;
+    border: none;
+    cursor: pointer;
+}
+.list{margin: 0 auto;position: absolute;bottom: 23%;left: 50%;width: 200px;height: 30px;cursor: pointer;}
