@@ -1,6 +1,7 @@
 @charset "utf-8";
 .tblBox{position: relative;height: 618px;}
 .tblBox table{text-align: center;}
+.tblBox table img{cursor: default;}
 .bn{
     width: 200px;
     height: 40px;
@@ -8,4 +9,5 @@
     border: none;
     cursor: pointer;
 }
-.list{margin: 0 auto;position: absolute;bottom: 23%;left: 50%;width: 200px;height: 30px;cursor: pointer;}
+.list{margin: 0 auto;position: absolute;bottom: 23%;left: 50%;width: 200px;height: 30px;cursor: pointer;border-radius: 0;border: none;background-color: red;color: white;font-size: 20px;font-weight: bold;
+}

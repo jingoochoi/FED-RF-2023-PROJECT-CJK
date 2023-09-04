@@ -102,6 +102,8 @@ window.addEventListener('click',btft)
 function btft() {
     let bt=document.querySelector('.list')
     bt.onclick=function () {
-        return
+        // console.log('b')
+        window.removeEventListener('DOMContentLoaded',imgft)
+        window.location.reload();//refresh
     }
 }
