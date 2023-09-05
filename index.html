@@ -33,7 +33,7 @@
         }
         nav li{padding-bottom: 15px;}
         .shopping{position: relative;}
-        .submenu{position: absolute;width: 50%;left: 50%;transform: translateX(-50%);padding: 0;border: 0;display: block;height: 0;background-color: hotpink;margin: 0 auto;overflow: hidden;}
+        .submenu{position: absolute;width: 50%;left: 50%;transform: translateX(-50%);padding: 0;border: 0;display: block;height: 0;background-color: hotpink;margin: 0 auto;overflow: hidden;z-index: 333;}
         .shopping:hover .submenu{height: 100px;top: 100%;}
         ol{padding: 0;display: block;list-style: none;}
         .submenu li{display: block;text-align: center;width: 100%;padding: 0;}
@@ -96,12 +96,12 @@
         <div class="tblBox">
             <table align="center">
             <tr>
-                <td><div class="imk"><img src="./img/egg.jpg" alt="egg" class="imgok"></div></td>
-                <td><div class="imk"><img src="./img/meat.jpg" alt="meat" class="imgok"></div></td>
-                <td><div class="imk"><img src="./img/bowl.jpg" alt="bowl" class="imgok"></div></td>
+                <td><div class="imk"><img src="./img/egg.jpg" alt="egg" class="imgok" style="cursor: pointer;"></div></td>
+                <td><div class="imk"><img src="./img/meat.jpg" alt="meat" class="imgok" style="cursor: pointer;"></div></td>
+                <td><div class="imk"><img src="./img/bowl.jpg" alt="bowl" class="imgok" style="cursor: pointer;"></div></td>
             </tr>
             <tr>
-                <td><div class="imk"><img src="./img/knife.jpg" alt="knife" class="imgok"></div></td>
+                <td><div class="imk"><img src="./img/knife.jpg" alt="knife" class="imgok" style="cursor: pointer;"></div></td>
             </tr>
         </table>
 

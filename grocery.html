@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TONY STORE</title>
-    <script></script>
+    <link rel="stylesheet" href="button.css">
     <style>
         body{
             margin: 0;
@@ -29,7 +29,7 @@
         }
         nav li{padding-bottom: 15px;}
         .shopping{position: relative;}
-        .submenu{position: absolute;width: 50%;left: 50%;transform: translateX(-50%);padding: 0;border: 0;display: block;height: 0;background-color: hotpink;margin: 0 auto;overflow: hidden;}
+        .submenu{position: absolute;width: 50%;left: 50%;transform: translateX(-50%);padding: 0;border: 0;display: block;height: 0;background-color: hotpink;margin: 0 auto;overflow: hidden;z-index: 333;}
         .shopping:hover .submenu{height: 100px;top: 100%;}
         ol{padding: 0;display: block;list-style: none;}
         .submenu li{display: block;text-align: center;width: 100%;padding: 0;}
@@ -69,6 +69,7 @@
             footer{font-size: 3.9vw;}
         }
     </style>
+    <script src="./img.js"></script>
 </head>
 <body>
     <header class="b" style="background-color: pink;"><div style="text-align: center;"><a class="tt" href="index.html">
@@ -90,16 +91,19 @@
             <li class="cont"><a href="notice.html">NOTICE</a></li>
         </ul>
     </nav>
-    <main class="b" style="background-color: yellowgreen;"><table align="center">
-        <tr>
-            <td><a href="egg.html"><img src="./img/egg.jpg" alt="egg"></a></td>
-            <td><a href="meat.html"><img src="./img/meat.jpg" alt="meat"></a></td>
-            <td><a href="sauce.html"><img src="./img/sauce.jpg" alt="sauce"></a></td>
-        </tr>
-        <tr>
-            <td><a href="vegetable.html"><img src="./img/vegetable.jpg" alt="vegetable"></a></td>
-        </tr>
-    </table>
+    <main class="b" style="background-color: yellowgreen;">
+        <div class="tblBox">
+            <table align="center">
+            <tr>
+                <td><div class="imk"><img src="./img/egg.jpg" alt="egg" class="imgok" style="cursor: pointer;"></div></td>
+                <td><div class="imk"><img src="./img/meat.jpg" alt="meat" class="imgok" style="cursor: pointer;"></div></td>
+                <td><div class="imk"><img src="./img/sauce.jpg" alt="sauce" class="imgok" style="cursor: pointer;"></div></td>
+            </tr>
+            <tr>
+                <td><div class="imk"><img src="./img/vegetable.jpg" alt="vegetable" class="imgok" style="cursor: pointer;"></div></td>
+            </tr>
+            </table>
+        </div>
     <div class="btbx"><a href="#"><button class="btn">top</button></a></div>
 </main>
     <footer class="b" id="f" style="text-align: center;">
