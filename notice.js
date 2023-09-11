@@ -14,9 +14,7 @@ target.forEach((ele,idx)=>{
         ele.classList.toggle('on');
         // console.log(num);
         if (ele.classList.contains('on')) {
-            box.style.display='block'
-            box.style.height='100px'
-            box.innerHTML=`${data.content}`
+            box.classList.add('on')
         }
         target.forEach((el,ix)=>{
             if(ix!=num) el.classList.remove('on');
