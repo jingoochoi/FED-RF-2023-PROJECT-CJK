@@ -4,3 +4,17 @@ const data=[
     {number:'2',title:'notice2-origin',date:'2023.10.10',content:`sorry for the last issue<br>we now fix it and re-check about it<br>thank you`},
     {number:'3',title:'notice3-opening',date:'2022.12.12',content:`welcome everybody<br>we now open the shop<br>thank you`},
 ]
+
+const target = document.querySelectorAll('.b table tbody tr');
+console.log(target);
+
+target.forEach((ele,idx)=>{
+    ele.onclick = () => {
+        let num = idx;
+        ele.classList.toggle('on');
+        console.log(num);
+        target.forEach((el,ix)=>{
+            if(ix!=num) el.classList.remove('on');
+        })
+    }
+})

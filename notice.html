@@ -63,8 +63,8 @@
         table tbody tr{border-bottom: 1px solid black;}
         table tbody tr td:last-child{position: relative;}
         table tbody tr td:last-child::after{content: '▼';margin-left: 30px;display: block;position: absolute;top: 0;right: 0;}
-        table tbody tr:active td:last-child::after{content: '▲';margin-left: 30px;display: block;position: absolute;top: 0;right: 0;}
-        table tbody tr:active{height: 100px;}
+        table tbody tr.on td:last-child::after{content: '▲';margin-left: 30px;display: block;position: absolute;top: 0;right: 0;}
+        table tbody tr.on{height: 100px;}
         table tr:last-child{border-bottom: 1px  solid black;}
         .btbx{width: 100%;position: relative;height: 30px;}
         .btn{width: 100px;position: absolute;top: 50%;transform: translateY(-50%);right: 10px;cursor: pointer;height: 33px;background-color: goldenrod;border-radius: 30px;}
