@@ -6,13 +6,13 @@ const data=[
 ]
 
 const target = document.querySelectorAll('.b table tbody tr');
-console.log(target);
+// console.log(target);
 
 target.forEach((ele,idx)=>{
     ele.onclick = () => {
         let num = idx;
         ele.classList.toggle('on');
-        console.log(num);
+        // console.log(num);
         target.forEach((el,ix)=>{
             if(ix!=num) el.classList.remove('on');
         })
