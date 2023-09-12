@@ -5,16 +5,16 @@ const data=[
     {number:'3',title:'notice3-opening',date:'2022.12.12',content:`welcome everybody<br>we now open the shop<br>thank you`},
 ]
 
-const target = document.querySelectorAll('.b table tbody tr');
+const target = document.querySelectorAll('.b .table .tbody .tr');
 // console.log(target);
-let box=document.querySelectorAll('.box')
+let cont=document.querySelectorAll('.cont')
 target.forEach((ele,idx)=>{
     ele.onclick = () => {
         let num = idx;
         ele.classList.toggle('on');
         // console.log(num);
         if (ele.classList.contains('on')) {
-            box.classList.add('on')
+            cont.innerHTML=`${data.content}`
         }
         target.forEach((el,ix)=>{
             if(ix!=num) el.classList.remove('on');

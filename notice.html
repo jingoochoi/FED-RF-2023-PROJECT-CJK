@@ -68,6 +68,22 @@
         table tbody tr.on td:last-child::after{content: '▲';margin-left: 30px;display: block;position: absolute;top: 0;right: 0;}
         
         table tr:last-child{border-bottom: 1px  solid black;}
+
+        .table{width: 50%;margin: 0 auto;}
+        .thead{display: flex;justify-content: space-evenly;border-top: 1px solid #000;border-bottom: 1px solid black;}
+        .thead .th{font-weight: bold;}
+        .thead .th:first-child{width: 20%;}
+        .thead .th:nth-child(2){width: 50%;}
+        .thead .th:last-child{width: 30%;}
+        .tr{display: flex;justify-content: space-evenly;border-bottom: 1px solid black;position: relative;cursor: pointer;}
+        .tr .td:first-child{width: 20%;}
+        .tr .td:nth-child(2){width: 50%;}
+        .tr .td:last-child{width: 30%;position: relative;}
+        .tr .td:last-child::after{content: '▼';position: absolute;top: 0;right: 0;}
+        .tr.on .td:last-child::after{content: '▲';}
+        .cont{width: 100%;display: none;border-bottom: 1px solid black;text-align: left;font-weight: bold;color: cornflowerblue;}
+        .tr.on +.cont{display: flex;justify-content: center;}
+
         .btbx{width: 100%;position: relative;height: 30px;}
         .btn{width: 100px;position: absolute;top: 50%;transform: translateY(-50%);right: 10px;cursor: pointer;height: 33px;background-color: goldenrod;border-radius: 30px;}
         @media screen and (max-width:500px) {
@@ -101,33 +117,35 @@
     </nav>
     <main class="b" style="background-color: yellowgreen;">
         <h1>Important notice to you all</h1>
-        <table>
-            <thead>
-                <th class="number">number</th>
-                <th class="title">title</th>
-                <th class="date">date</th>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>notice1-recent</td>
-                    <td>2023.10.13</td>
-                </tr>
-                <tr class="box"></tr>
-                <tr>
-                    <td>2</td>
-                    <td>notice2-origin</td>
-                    <td>2023.10.10</td>
-                </tr>
-                <tr class="box"></tr>
-                <tr>
-                    <td>3</td>
-                    <td>notice3-opening</td>
-                    <td>2022.12.12</td>
-                </tr>
-                <tr class="box"></tr>
-            </tbody>
-        </table>
+        
+        <br>
+        <div class="table">
+            <div class="thead">
+                <div class="th">number</div>
+                <div class="th">title</div>
+                <div class="th">date</div>
+            </div>
+            <div class="tbody">
+                <div class="tr">
+                    <div class="td">1</div>
+                    <div class="td">We will have a vacation</div>
+                    <div class="td">2023.10.13</div>
+                </div>
+                <div class="cont">We now announce that we will have a vacation until tomorrow.<br>So the delivery will be delayed 2 or 3days.<br>We are very sorry. Thank you.</div>
+                <div class="tr">
+                    <div class="td">2</div>
+                    <div class="td">Sorry for the last issue</div>
+                    <div class="td">2023.10.10</div>
+                </div>
+                <div class="cont">Sorry for the last issue.<br>We now fix it and re-check about it.<br>Thank you.</div>
+                <div class="tr">
+                    <div class="td">3</div>
+                    <div class="td">Welcome everybody</div>
+                    <div class="td">2022.12.12</div>
+                </div>
+                <div class="cont">Welcome everybody.<br>We now open the shop.<br>Thank you.</div>
+            </div>
+        </div>
         <div class="btbx"><a href="#"><button class="btn">top</button></a></div>
     </main>
     <footer class="b" id="f" style="text-align: center;">
