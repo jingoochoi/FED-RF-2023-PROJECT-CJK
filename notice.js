@@ -7,7 +7,7 @@ const data=[
 
 const target = document.querySelectorAll('.b .table .tbody .tr');
 // console.log(target);
-let cont=document.querySelectorAll('.cont')
+let cont=document.querySelectorAll('.con')
 target.forEach((ele,idx)=>{
     ele.onclick = () => {
         let num = idx;
