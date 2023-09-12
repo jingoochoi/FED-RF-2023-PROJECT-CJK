@@ -55,6 +55,7 @@
             color: #000;
             text-decoration: none;
         }
+        #daumRoughmapContainer1694503396041{margin: 0 auto;}
         table{margin: 0 auto;}
         table tr:first-of-type,table tr:nth-of-type(2),table tr:nth-of-type(3){text-align: left;}
         .submit{cursor: pointer;width: 233px;height: 60px;font-size: 40px;background-image: linear-gradient(to right bottom,deepskyblue,dodgerblue);border: none;}
@@ -89,8 +90,28 @@
         </ul>
     </nav>
     <main class="b" style="background-color: yellowgreen;">
-        <iframe src="" frameborder="0" class="map">company location</iframe>
-        <br>
+        <h2>Our location</h2>
+        <!-- * 카카오맵 - 지도퍼가기 -->
+        <!-- 1. 지도 노드 -->
+        <div id="daumRoughmapContainer1694503396041" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+        <!--
+	    2. 설치 스크립트
+	    * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+        -->
+        <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+        <!-- 3. 실행 스크립트 -->
+        <script charset="UTF-8">
+	    new daum.roughmap.Lander({
+		"timestamp" : "1694503396041",
+		"key" : "2g6ht",
+		"mapWidth" : "640",
+		"mapHeight" : "360"
+	    }).render();
+        </script>
+        <br><br>
+        <h2>mail to us</h2>
         <table>
             <tr>
                 <td>name:</td>
